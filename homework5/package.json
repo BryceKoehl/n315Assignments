@@ -8,7 +8,7 @@
   },
   "scripts": {
     "server": "live-server",
-    "compile: sass": "node-sass scss/styles.scss css/styles.css -w"
+    "compile:sass": "node-sass scss/styles.scss css/styles.css -w"
   },
   "author": "",
   "license": "ISC",

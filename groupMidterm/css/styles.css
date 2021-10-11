@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#footer {
+  width: 100%;
+  background-color: #000;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+#footer .copyright {
+  width: 20%;
+}
+#footer .copyright p {
+  color: #fff;
+  text-align: center;
+}
+#footer .footerNav {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#footer .footerNav a {
+  color: #fff;
+  text-decoration: none;
+}
+#footer .socialMedia {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #fff;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  padding: 30px;
+  background-color: black;
+}
+nav .logo {
+  width: 20%;
+}
+nav .logo i {
+  height: 30px;
+  width: 30px;
+  color: #ffffff;
+}
+nav .navLinks {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .navLinks a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown {
+  display: none;
+}
+.dropdown i {
+  color: #ffffff;
+}
+.dropdown .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.dropdown .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.dropdown .sidenav a:hover {
+  color: #f1f1f1;
+}
+.dropdown .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 595px) {
+  nav .navLinks {
+    display: none;
+    background-color: red;
+  }
+  nav .dropdown {
+    display: block;
+  }
+}
+.about-hero {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.01))), url(../images/homeGhost.jpeg);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.01)), url(../images/homeGhost.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.about-hero h1 {
+  text-align: center;
+}
+
+.contents {
+  margin: 50px auto;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.contents .content {
+  height: 300px;
+  width: 30%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.sheet1 {
+  background-image: url(../images/sheet1.jpeg);
+}
+
+.sheet2 {
+  background-image: url(../images/sheet2.jpeg);
+}
+
+.sheet3 {
+  background-image: url(../images/sheet3.jpeg);
+}
+
+.sheet4 {
+  background-image: url(../images/sheet4.jpeg);
+}
+
+.sheet5 {
+  background-image: url(../images/sheet5.jpeg);
+}
+
+.sheet6 {
+  background-image: url(../images/sheet6.jpeg);
+}
+
+.sheet7 {
+  background-image: url(../images/sheet7.jpeg);
+}
+
+.sheet8 {
+  background-image: url(../images/sheet8.jpeg);
+}
+
+.sheet9 {
+  background-image: url(../images/sheet9.jpeg);
+}
+
+.socks1 {
+  background-image: url(../images/socks1.jpeg);
+}
+
+.socks2 {
+  background-image: url(../images/socks2.jpeg);
+}
+
+.socks3 {
+  background-image: url(../images/socks3.jpeg);
+}
+
+.socks4 {
+  background-image: url(../images/socks4.jpeg);
+}
+
+.socks5 {
+  background-image: url(../images/socks5.jpeg);
+}
+
+.socks6 {
+  background-image: url(../images/socks6.jpeg);
+}
+
+.socks7 {
+  background-image: url(../images/socks7.jpeg);
+}
+
+.socks8 {
+  background-image: url(../images/socks8.jpeg);
+}
+
+.socks9 {
+  background-image: url(../images/socks9.jpeg);
+}
+
+.scissors1 {
+  background-image: url(../images/scissors1.jpeg);
+}
+
+.scissors2 {
+  background-image: url(../images/scissors2.jpeg);
+}
+
+.scissors3 {
+  background-image: url(../images/scissors3.jpeg);
+}
+
+.scissors4 {
+  background-image: url(../images/scissors4.jpeg);
+}
+
+.scissors5 {
+  background-image: url(../images/scissors5.jpeg);
+}
+
+.scissors6 {
+  background-image: url(../images/scissors6.jpeg);
+}
+
+.scissors7 {
+  background-image: url(../images/scissors7.jpeg);
+}
+
+.scissors8 {
+  background-image: url(../images/scissors8.jpeg);
+}
+
+.scissors9 {
+  background-image: url(../images/scissors9.jpeg);
+}

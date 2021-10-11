@@ -1,0 +1,11 @@
+.about-hero{
+    background-image: linear-gradient(to right, rgba(255,255,255, .3), rgba(255,255,255, .01)),
+    url(../images/homeGhost.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    h1 {
+        text-align: center;
+    }
+}

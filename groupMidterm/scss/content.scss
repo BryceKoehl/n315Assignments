@@ -1,0 +1,15 @@
+.contents {
+    margin: 50px auto;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    .content {
+        height: 300px;
+        width: 30%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
