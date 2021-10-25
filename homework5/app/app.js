@@ -28,6 +28,16 @@ function hamburgerDropDown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = documnet.getElementsByClassName("dropdwon-content");

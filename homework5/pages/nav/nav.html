@@ -4,17 +4,22 @@
 
     <div class="dropdown">
         <div class="menu">
-            <i onclick="hamburgerDropDown()" class="fas fa-bars fa-2x dropbtn"></i>
-            <div id="myDropdown" class="dropdown-content">
-                <a id="home" href="#">home</a>
-                <a id="recipes" href="#">browse</a>
-                <a id="createRecipe" href="#">create recipe</a>
-                <a id="yourRecipe" href="#">Your Recipes</a>
-                <a id="login" href="#">login</a>
-                <a id="logout" href="#">logout</a>
-            </div>
+            <i onclick="openNav()" class="fas fa-bars fa-2x dropbtn"></i>
         </div>
     </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a id="home" href="#" onclick="closeNav()">home</a>
+        <a id="recipes" href="#" onclick="closeNav()">browse</a>
+        <a id="createRecipe" href="#" onclick="closeNav()">create recipe</a>
+        <a id="yourRecipe" href="#" onclick="closeNav()">Your Recipes</a>
+        <a id="login" href="#" onclick="closeNav()">login</a>
+        <a id="logout" href="#">logout</a>
+    </div>
+    <!-- 
+    <span onclick="openNav()"></span> -->
+
 
     <div class="navLinks">
         <a id="home" href="#">home</a>

@@ -85,15 +85,7 @@
 
 }
 
-@media screen and (min-width: $laptop) {
-    body {
-      background-color: rgba(242, 92, 84, 0.9);
-    }
-  
-    .home {
-      margin: 0 auto;
-    }
-}
+
 
 @media screen and (max-width: $tablet) {
     .home {
@@ -130,94 +122,3 @@
   }
 }
 
-
-//   @media screen and (max-width: $mobile) {
-//     .home {
-//       .callout {
-//         .smallCircle {
-//           width: 121px;
-//           height: 121px;
-  
-//           font-size: 8px;
-//           margin-left: 50vw;
-//           margin-top: -30vh;
-//         }
-//         .bigCircle {
-//           width: 257px;
-//           height: 257px;
-//           .header {
-//             width: 100%;
-//             height: 100%;
-//             margin-top: 75px;
-  
-//             font-size: 17px;
-//           }
-//           .subHeader {
-//             width: 50%;
-//             height: 100%;
-//             font-size: 9px;
-//             margin-top: -75px;
-//           }
-//         }
-//       }
-//     }
-//   }
-
-// @media screen and (min-width: $laptop) {
-//     body {
-//       background-color: rgba(242, 92, 84, 0.9);
-//     }
-  
-//     .home {
-//       margin: 0 auto;
-//     }
-//   }
-  
-//   @media screen and (max-width: $tablet) {
-//     .home {
-//       .callout {
-//         .smallCircle {
-//           margin-left: 45vw;
-//           margin-top: -30vh;
-//           font-size: 10px;
-//         }
-//         .bigCircle {
-//           .header {
-//           }
-//           .subHeader {
-//           }
-//         }
-//       }
-//     }
-//   }
-  
-//   @media screen and (max-width: $mobile) {
-//     .home {
-//       .callout {
-//         .smallCircle {
-//           width: 121px;
-//           height: 121px;
-  
-//           font-size: 8px;
-//           margin-left: 50vw;
-//           margin-top: -30vh;
-//         }
-//         .bigCircle {
-//           width: 257px;
-//           height: 257px;
-//           .header {
-//             width: 100%;
-//             height: 100%;
-//             margin-top: 75px;
-  
-//             font-size: 17px;
-//           }
-//           .subHeader {
-//             width: 50%;
-//             height: 100%;
-//             font-size: 9px;
-//             margin-top: -75px;
-//           }
-//         }
-//       }
-//  
