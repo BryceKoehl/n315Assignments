@@ -14,7 +14,9 @@ function initListen() {
         let btnID = e.currentTarget.id;
         console.log(btnID)
         if (btnID == "login"){
-            MODEL.getView(btnID);
+            $.get("pages/login/login.html", function (data) {
+                $("#content").html(data);
+            });
         } else if (btnID == "signout") {
             signOut();
         }
@@ -75,15 +77,11 @@ function signOut() {
         // Sign-out successful.
         document.getElementById("login").display = "block";
         document.getElementById("signout").style.display = "none";
-
-        // $("#login").css("display", "block");
-        // $("#signout").css("display", "none");
     }).catch((error) => {
         // An error happened.
         console.log(error);
     });
 }
-
 
 
 function loginUser() {
@@ -93,14 +91,11 @@ function loginUser() {
         .then((userCredential) => {
             // Signed in
             var user = userCredential.user;
-          document.getElementById("login").style.display = "none";
-          document.getElementById("signout").style.display = "block";
-
-        // $("#login").css("display", "none");
-        // $("#signout").css("display", "block");
-        // MODEL.getView("#home");
-
         
+            document.getElementById("login").display = "none";
+            document.getElementById("signout").style.display = "block";
+            
+            
             console.log("Signed In");
             // ...
         })
@@ -111,7 +106,6 @@ function loginUser() {
         });
 
 }
-
 
 function initSite() {
     $.get("pages/nav/nav.html", function (nav) {
@@ -143,10 +137,6 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-function stripSideNav() {
-    
-}
-
 $(document).ready(function () {
     initSite();
     initListen();
@@ -158,5 +148,3 @@ $(document).ready(function () {
         console.error(e);
     }
 });
-
-

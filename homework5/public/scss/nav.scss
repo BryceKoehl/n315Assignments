@@ -1,0 +1,198 @@
+.nav {
+  width: 100vw;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 50px;
+  // background-color: aqua;
+
+  .show {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  .menu {
+    display: none;
+    color: $darkGrey;
+    padding-left: 50vw;
+  }
+
+  .logo {
+    width: 169px;
+    height: 55px;
+    background-image: url(../images/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .navLinks {
+    margin-right: 100px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .closebtn {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: Caveat-Regular, Caveat;
+      font-size: 25px;
+      text-transform: capitalize;
+      color: $black;
+      background-color: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+    }
+    a:hover {
+      background-color: $blue;
+      padding: 10px 25px;
+      border-radius: 25px;
+    }
+    #login {
+      background-color: $yellow;
+      padding: 10px 52px;
+      border-radius: 25px;
+    }
+    #login:hover {
+      background-color: $darkGrey;
+      padding: 10px 52px;
+      border-radius: 25px;
+      color: $yellow;
+    }
+    #signout {
+      display: none;
+      background-color: $yellow;
+      padding: 10px 52px;
+      border-radius: 25px;
+    }
+    #signout:hover {
+      background-color: $darkGrey;
+      padding: 10px 52px;
+      border-radius: 25px;
+      color: $yellow;
+    }
+    #yourRecipe {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .nav {
+    width: $laptop;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+    .menu {
+      display: flex;
+      width: 55px;
+      height: 55px;
+      margin-right: 100px;
+      margin-top: 10px;
+    }
+
+    .navLinks {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 0;
+      background-color: #111; /* Black*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the navLinks */
+    }
+
+    /* The navigation menu links */
+    .navLinks a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .navLinks a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .navLinks .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+      transition: margin-left 0.5s;
+      padding: 20px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the navLinks (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .navLinks {
+        padding-top: 15px;
+      }
+      .navLinks a {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .nav {
+    width: $mobile;
+  }
+}
+
+//   @media screen and (max-width: $tablet) {
+//     .topNav {
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: space-between;
+//       align-items: center;
+//       margin-top: 50px;
+
+//       .menuSVG {
+//         display: flex;
+//         width: 55px;
+//         height: 55px;
+//         background-image: url(../media/menu.svg);
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         margin-right: 100px;
+//       }
+//       .links {
+//         display: none;
+//       }
+//     }
+//   }
+
+//   @media screen and (max-width: $mobile) {
+//     .topNav {
+//       width: $mobile;
+//     }
+//   }

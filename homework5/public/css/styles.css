@@ -243,13 +243,13 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 25px;
   color: #ffd972;
 }
-.nav .navLinks #logout {
+.nav .navLinks #signout {
   display: none;
   background-color: #ffd972;
   padding: 10px 52px;
   border-radius: 25px;
 }
-.nav .navLinks #logout:hover {
+.nav .navLinks #signout:hover {
   background-color: #393939;
   padding: 10px 52px;
   border-radius: 25px;
@@ -569,9 +569,14 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 @media screen and (max-width: 768px) {
+  .registration .callout .loginWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .registration .callout .loginWrapper .divider {
-    float: left;
-    width: 50%;
+    width: 100%;
     padding: 10px;
   }
 }
