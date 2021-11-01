@@ -159,26 +159,6 @@ h1, h2, h3, h4, h5, h6, p {
           align-items: center;
   margin-left: 50px;
   margin-top: 50px;
-  /* The navigation menu links */
-  /* When you mouse over the navigation links, change their color */
-  /* Position and style the close button (top right corner) */
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-}
-.nav .dropdown {
-  position: relative;
-  display: inline-block;
-}
-.nav .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 160px;
-  overflow: auto;
-  z-index: 1;
-}
-.nav .dropdown a:hover {
-  background-color: #ddd;
 }
 .nav .show {
   display: -webkit-box;
@@ -216,6 +196,9 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.nav .navLinks .closebtn {
+  display: none;
 }
 .nav .navLinks a {
   text-decoration: none;
@@ -258,60 +241,6 @@ h1, h2, h3, h4, h5, h6, p {
 .nav .navLinks #yourRecipe {
   display: none;
 }
-.nav .sidenav {
-  height: 100%;
-  /* 100% Full-height */
-  width: 0;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Stay on top */
-  top: 0;
-  /* Stay at the top */
-  left: 0;
-  background-color: #111;
-  /* Black*/
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 60px;
-  /* Place content 60px from the top */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidenav */
-}
-.nav .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.nav .sidenav a:hover {
-  color: #f1f1f1;
-}
-.nav .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-.nav #main {
-  -webkit-transition: margin-left 0.5s;
-  transition: margin-left 0.5s;
-  padding: 20px;
-}
-@media screen and (max-height: 450px) {
-  .nav .sidenav {
-    padding-top: 15px;
-  }
-  .nav .sidenav a {
-    font-size: 18px;
-  }
-}
 
 @media screen and (min-width: 1280px) {
   .nav {
@@ -334,6 +263,11 @@ h1, h2, h3, h4, h5, h6, p {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 50px;
+    /* The navigation menu links */
+    /* When you mouse over the navigation links, change their color */
+    /* Position and style the close button (top right corner) */
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    /* On smaller screens, where height is less than 450px, change the style of the navLinks (less padding and a smaller font size) */
   }
   .nav .menu {
     display: -webkit-box;
@@ -345,12 +279,59 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 10px;
   }
   .nav .navLinks {
-    display: none;
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the navLinks */
+  }
+  .nav .navLinks a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .nav .navLinks a:hover {
+    color: #f1f1f1;
+  }
+  .nav .navLinks .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    display: block;
+  }
+  .nav #main {
+    -webkit-transition: margin-left 0.5s;
+    transition: margin-left 0.5s;
+    padding: 20px;
   }
 }
-@media screen and (max-width: 375px) {
-  .nav {
-    width: 375px;
+@media screen and (max-width: 768px) and (max-height: 450px) {
+  .nav .navLinks {
+    padding-top: 15px;
+  }
+  .nav .navLinks a {
+    font-size: 18px;
   }
 }
 #footer {

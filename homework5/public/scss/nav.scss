@@ -142,6 +142,7 @@
       right: 25px;
       font-size: 36px;
       margin-left: 50px;
+      display: block;
     }
 
     /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -161,38 +162,3 @@
     }
   }
 }
-
-@media screen and (max-width: $mobile) {
-  .nav {
-    width: $mobile;
-  }
-}
-
-//   @media screen and (max-width: $tablet) {
-//     .topNav {
-//       display: flex;
-//       flex-direction: row;
-//       justify-content: space-between;
-//       align-items: center;
-//       margin-top: 50px;
-
-//       .menuSVG {
-//         display: flex;
-//         width: 55px;
-//         height: 55px;
-//         background-image: url(../media/menu.svg);
-//         background-size: contain;
-//         background-repeat: no-repeat;
-//         margin-right: 100px;
-//       }
-//       .links {
-//         display: none;
-//       }
-//     }
-//   }
-
-//   @media screen and (max-width: $mobile) {
-//     .topNav {
-//       width: $mobile;
-//     }
-//   }
