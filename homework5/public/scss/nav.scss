@@ -6,7 +6,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 50px;
+  margin-left: 0px;
   margin-top: 50px;
   // background-color: aqua;
 
@@ -18,7 +18,7 @@
 
   .menu {
     display: none;
-    color: $darkGrey;
+    color: $lightGrey;
     padding-left: 50vw;
   }
 
@@ -28,6 +28,7 @@
     background-image: url(../images/logo.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    margin-left: 50px;
   }
 
   .navLinks {
@@ -74,7 +75,7 @@
       border-radius: 25px;
     }
     #signout:hover {
-      background-color: $darkGrey;
+      background-color: $lightGrey;
       padding: 10px 52px;
       border-radius: 25px;
       color: $yellow;
@@ -119,6 +120,10 @@
       padding-top: 60px; /* Place content 60px from the top */
       transition: 0.5s; /* 0.5 second transition effect to slide in the navLinks */
     }
+
+    // nag  it's saying scss/styles.scss doesn't exist??
+    //well it doesn
+    //it might be a missing var somwhere
 
     /* The navigation menu links */
     .navLinks a {
