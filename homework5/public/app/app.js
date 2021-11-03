@@ -42,11 +42,12 @@ function initFirebase() {
 }
 
 function createUser() {
-  // leaving this format breaks code
-  // let email = $(#email).val();
-  // let password = $(#password).val(); //$(#password).val();
-  // let firstName = $(#firstName).val();
-  // let lastName = $(#lastName).val();
+  let email = $("#email").val();
+  let password = $("#password").val(); //$(#password).val();
+  let firstName = $("#firstName").val();
+  let lastName = $("#lastName").val();
+
+  // console.table({ email, password, firstName, lastName });
 
   firebase
     .auth()
@@ -86,8 +87,14 @@ function signOut() {
 }
 
 function loginUser() {
-  let password = "password"; //$(#password).val();
-  let email = "bkkoehl@iu.edu";
+  //email: bkkoehl@iu.edu
+  //password: password
+
+  let email = $("#loginEmail").val();
+  let password = $("#loginPassword").val();
+
+  console.log(email, password);
+
   firebase
     .auth()
     .signInWithEmailAndPassword(email, password)
