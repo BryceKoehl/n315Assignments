@@ -70,9 +70,10 @@
     }
     #signout {
       display: none;
-      background-color: $yellow;
+      background-color: $lightGrey;
       padding: 10px 52px;
       border-radius: 25px;
+      color: $yellow;
     }
     #signout:hover {
       background-color: $lightGrey;
@@ -114,11 +115,13 @@
       position: fixed; /* Stay in place */
       z-index: 1; /* Stay on top */
       top: 0; /* Stay at the top */
-      left: 0;
+      right: -100px;
       background-color: #111; /* Black*/
       overflow-x: hidden; /* Disable horizontal scroll */
       padding-top: 60px; /* Place content 60px from the top */
       transition: 0.5s; /* 0.5 second transition effect to slide in the navLinks */
+      flex-direction: column;
+      justify-content: space-evenly;
     }
 
     // nag  it's saying scss/styles.scss doesn't exist??
@@ -144,9 +147,8 @@
     .navLinks .closebtn {
       position: absolute;
       top: 0;
-      right: 25px;
+      left: 0;
       font-size: 36px;
-      margin-left: 50px;
       display: block;
     }
 

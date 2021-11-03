@@ -142,6 +142,12 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+// /* Set the width of the side navigation to 0 */
+function closeButton() {
+  document.getElementById("mySidenav").style.width = "0";
+  // document.getElementById("navLinks").style.width = "250px";
+}
+
 function stripSideNav() {}
 
 $(document).ready(function () {
