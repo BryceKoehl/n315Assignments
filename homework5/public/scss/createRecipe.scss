@@ -1,0 +1,64 @@
+.create {
+  height: 100%;
+  width: 100%;
+  background-color: $white;
+  justify-content: center;
+  align-items: center;
+
+  .recipeForm {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    color: $black;
+    font-family: sans-serif;
+    text-align: left;
+    vertical-align: center;
+    flex-direction: column;
+
+    form {
+      margin-top: 150px;
+      margin-left: 100px;
+
+      label {
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"] {
+        width: 70%;
+        height: 30px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        border: none;
+        border-bottom: 2px solid black;
+      }
+
+      input[type="submit"] {
+        text-align: center;
+        margin-top: -25px;
+        vertical-align: center;
+        font-size: 25px;
+        height: 40px;
+        width: 300px;
+        background-color: $lightPink;
+        padding: 5px 10px;
+        border-radius: 26px;
+        box-shadow: 5px 10px 6px $black;
+        border: none;
+        opacity: 1;
+        margin-bottom: 75px;
+      }
+    }
+
+    h1 {
+      font-size: 200%;
+      z-index: 1;
+    }
+
+    h4 {
+      font-size: 180%;
+    }
+  }
+}

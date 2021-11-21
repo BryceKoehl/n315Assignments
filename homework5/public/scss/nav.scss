@@ -1,5 +1,5 @@
 .nav {
-  width: 100vw;
+  // width: 100vw;
   position: fixed;
   z-index: 99;
   display: flex;
@@ -8,6 +8,7 @@
   align-items: center;
   margin-left: 0px;
   margin-top: 50px;
+  margin-right: 200px;
   // background-color: aqua;
 
   .show {
@@ -32,11 +33,13 @@
   }
 
   .navLinks {
-    margin-right: 100px;
+    margin-right: 50px;
+    margin-left: 400px;
     width: fit-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    float: right;
 
     .closebtn {
       display: none;
@@ -45,12 +48,13 @@
     a {
       text-decoration: none;
       font-family: Caveat-Regular, Caveat;
-      font-size: 25px;
+      font-size: 24px;
       text-transform: capitalize;
       color: $black;
       background-color: none;
       padding: 10px 25px;
       border-radius: 25px;
+      width: max-content;
     }
     a:hover {
       background-color: $blue;
@@ -60,6 +64,7 @@
     #login {
       background-color: $yellow;
       padding: 10px 52px;
+      margin-right: 47px;
       border-radius: 25px;
     }
     #login:hover {
@@ -87,9 +92,43 @@
   }
 }
 
-@media screen and (min-width: $laptop) {
+@media screen and (max-width: 1200px) {
   .nav {
-    width: $laptop;
+    .navLinks {
+      margin-left: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .nav {
+    .navLinks {
+      margin-left: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav {
+    .navLinks {
+      margin-left: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    .navLinks {
+      margin-left: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    .navLinks {
+      margin-left: -25px;
+    }
   }
 }
 
@@ -99,7 +138,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
 
     .menu {
       display: flex;
@@ -124,13 +162,9 @@
       justify-content: space-evenly;
     }
 
-    // nag  it's saying scss/styles.scss doesn't exist??
-    //well it doesn
-    //it might be a missing var somwhere
-
     /* The navigation menu links */
     .navLinks a {
-      padding: 8px 8px 8px 32px;
+      padding: 8px 90px 8px 32px;
       text-decoration: none;
       font-size: 25px;
       color: #818181;

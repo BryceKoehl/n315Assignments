@@ -1,20 +1,20 @@
 function initListner() {
-  // $("#nav nav a").click(function (e) {
-  //     var btnID = this.id;
-  //     console.log(btnID);
-  //     MODEL.getView(btnID);
-  // });
-
-  $("nav a").click(function (e) {
-    e.preventDefault();
-    let btnID = e.currentTarget.id;
+  $("#nav nav a").click(function (e) {
+    var btnID = this.id;
     console.log(btnID);
-    if (btnID == "login") {
-      MODEL.getView(btnID);
-    } else if (btnID == "signout") {
-      signOut();
-    }
+    MODEL.getView(btnID);
   });
+
+  // $("nav a").click(function (e) {
+  //   e.preventDefault();
+  //   let btnID = e.currentTarget.id;
+  //   console.log(btnID);
+  //   if (btnID == "login") {
+  //     MODEL.getView(btnID);
+  //   } else if (btnID == "signout") {
+  //     signOut();
+  //   }
+  // });
 }
 
 function initFirebase() {
@@ -135,9 +135,12 @@ function initSite() {
   });
 }
 
-function hamburgerDropDown() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+// function mobileNav() {
+//   $("menu, i").click(function (e) {
+//     $("mySidenav").toggleClass("active");
+//     console.log("whasts up");
+//   });
+// }
 
 // /* Set the width of the side navigation to 250px */
 function openNav() {
@@ -146,13 +149,7 @@ function openNav() {
 
 // /* Set the width of the side navigation to 0 */
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-// /* Set the width of the side navigation to 0 */
-function closeButton() {
-  document.getElementById("mySidenav").style.width = "0";
-  // document.getElementById("navLinks").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "0px";
 }
 
 function stripSideNav() {}
