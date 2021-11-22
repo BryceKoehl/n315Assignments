@@ -18,21 +18,24 @@
   align-items: center;
   .callout {
     .header {
-      margin-top: 100px;
+      margin-top: 200px;
       font-size: 25px;
+      margin-left: -500px;
       z-index: 1;
     }
   }
 
   .contentHolder {
     width: 80vw;
-    min-height: 300px;
+   
     max-height: 100%;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
+    padding-bottom: 100px;
 
     .foodUnit {
       margin: 10px;
@@ -144,15 +147,44 @@
   }
 }
 
-@media screen and (min-width: $tablet) {
+@media screen and (max-width: $tablet) {
   .recipes {
     .contentHolder {
       margin-bottom: 100px;
+      
     }
-    .callout {
-      .header {
-        margin-top: 300px;
+  }
+
+  .recipes .contentHolder .foodUnit .description .blurb {
+    margin-bottom: 50px;
+    width: 59px;
+    height: 55px;
+    font-size: 9px;
+    margin-top: 10px;
+    letter-spacing: 0.9px;
+    text-align: left;
+}
+}
+
+@media screen and (max-width: 1250px) {
+  .recipes {
+    .contentHolder {
+      margin-bottom: 100px;
+      
+    }
+
+    .callout{
+      .header{
+        margin-left: -100px;
       }
     }
   }
 }
+
+@media screen and (max-width: $mobile) {
+    .callout{
+      .header{
+        margin-left: 0px;
+      }
+    }
+  }

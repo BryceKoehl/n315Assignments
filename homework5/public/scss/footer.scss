@@ -1,5 +1,5 @@
 #footer {
-  width: 100vw;
+  width: 70vw;
   height: 20px;
   position: absolute;
   bottom: 0;
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: $laptop) {
   #footer {
-    width: $laptop-width;
+    width: $laptop;
   }
 }
 

@@ -1,64 +1,48 @@
-<div class="create">
     <div class="recipeForm">
-      <form>
-        <label for="intro">Hey, let's create your recipe!</label><br /><input
-          type="text"
-          id="recipeimg"
-          name="recipeImage"
-          placeholder="Add Recipe Image"
-        /><br /><input
-          type="text"
-          id="recipeName"
-          name="recipeName"
-          placeholder="Recipe Name"
-        /><br /><input
-          type="text"
-          id="recipeDesc"
-          name="recipeDesc"
-          placeholder="Recipe Description"
-        /><br /><input
-          type="text"
-          id="recipeTime"
-          name="recipeTime"
-          placeholder="Recipe Total Time"
-        /><br /><input
-          type="text"
-          id="recipeSize"
-          name="recipeSize"
-          placeholder="Recipe Serving Size"
-        /><br /><br /><label for="ingredients">Enter Ingredients:</label
-        ><br /><input
-          type="text"
-          id="ingredients"
-          name="ingredients"
-          placeholder="Ingredient #1"
-        /><br /><input
-          type="text"
-          id="ingredients"
-          name="ingredients"
-          placeholder="Ingredient #2"
-        /><br /><input
-          type="text"
-          id="ingredients"
-          name="ingredients"
-          placeholder="Ingredient #3"
-        /><br /><br /><label for="ingredients">Enter Instructions:</label
-        ><br /><input
-          type="text"
-          id="instructions"
-          name="instructions"
-          placeholder="Instruction #1"
-        /><br /><input
-          type="text"
-          id="instructions"
-          name="instructions"
-          placeholder="Instruction #2"
-        /><br /><input
-          type="text"
-          id="instructions"
-          name="instructions"
-          placeholder="Instruction #3"
-        /><br /><br /><input type="submit" value="Create Recipe" />
-      </form>
+
+
+      <div class="form">
+
+        <div class="mainRecipe">
+          <h3>Hey User, create your recipe!</h3>
+
+          <input type="text" placeholder="Add Recipe Image" />
+          <div class="createRecipeButton">
+            <span class="addImage" onclick="addImage(event)">Attach File</span>
+          </div>
+          <input type="text" placeholder="Recipe Name" />
+          <input type="text" placeholder="Recipe Description" />
+          <input type="text" placeholder="Recipe Total Time" />
+          <input type="text" placeholder="Recipe Serving Size" />
+
+        </div>
+
+
+        <div class="ind">
+          <h5>Enter Ingredients:</h5>
+
+          <input id="ind1" type="text" placeholder="Ingredient 1" />
+          <input id="ind2" type="text" placeholder="Ingredient 2" />
+          <input id="ind3" type="text" placeholder="Ingredient 3" />
+          <div class="createRecipeButton">
+            <span class="addIngredient" onclick="addIngredient(event)">+</span>
+          </div>
+        </div>
+
+        <div class="inst">
+          <h5>Enter Instructions:</h5>
+
+          <input id="inst1" type="text" placeholder="Instruction 1" />
+          <input id="inst2" type="text" placeholder="Instruction 2" />
+          <input id="inst3" type="text" placeholder="Instruction 3" />
+          <div class="createRecipeButton">
+            <span class="addInstruction" onclick="addInstruction(event)">+</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="addRecipeButton">
+        <span class="addInstruction" onclick="addRecipe(event)">Create Recipe</span>
+      </div>
     </div>
-  </div>

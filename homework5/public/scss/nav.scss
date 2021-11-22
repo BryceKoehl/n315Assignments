@@ -20,7 +20,7 @@
   .menu {
     display: none;
     color: $lightGrey;
-    padding-left: 50vw;
+    padding-left: 25vw;
   }
 
   .logo {
@@ -58,6 +58,7 @@
     }
     a:hover {
       background-color: $blue;
+      border-bottom: $lightGrey;
       padding: 10px 25px;
       border-radius: 25px;
     }

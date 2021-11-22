@@ -1,3 +1,6 @@
+var ingredCounter = 3;
+var instructCounter = 3;
+
 function initListner() {
   $("#nav nav a").click(function (e) {
     var btnID = this.id;
@@ -152,7 +155,36 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0px";
 }
 
-function stripSideNav() {}
+function addIngredient(e) {
+  //   console.log(e);
+  ingredCounter++;
+  $(".ind").append(
+    `<input id="ind${ingredCounter}" type="text" placeholder="Ingredient ${ingredCounter}"/>`
+  );
+}
+
+function addInstruction(e) {
+  //   console.log(e);
+  instructCounter++;
+  $(".inst").append(
+    `<input id="istruct${instructCounter}" type="text" placeholder="Instruction ${instructCounter}"/>`
+  );
+}
+
+function addRecipe(e) {
+  $.get("pages/nav/nav.html", function (nav) {
+    $("#nav").html(nav);
+    initListner();
+  });
+
+  $.get("pages/recipes/recipes.html", function (data) {
+    $("#content").html(data);
+  });
+
+  $.get("pages/footer/footer.html", function (data) {
+    $("#footer").html(data);
+  });
+}
 
 $(document).ready(function () {
   try {
