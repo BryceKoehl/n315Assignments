@@ -1,4 +1,5 @@
 #  Keurig Final Live Server
+This site is a semi-fuctional e-comerce webstie, meant to showcase the MVC model, HTML Veiw Injection, and JSON Datastorage.
 https://bk-n315-final.web.app
 
 # Jungle Cook live Server
