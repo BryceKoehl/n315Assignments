@@ -3,42 +3,42 @@
       "id": 0,
       "name": "K-Supreme Plus® SMART Single Serve Coffee Maker",
       "price": 200,
-      "image": "./../images/coffeeMaker0.webp",
+      "image": "https://images.keurig.com/is/image/keurig/K-Supreme-Plus-SMART-Coffee-Maker_5000361470_swatch?$pdp_general$&wid=352&hei=282&fmt=png-alpha&qlt=75,1&op_sharpen=0&resMode=bicub&op_usm=1,1,6,0&iccEmbed=0&printRes=72&extend=0,0,0,0",
       "rating": { "decimal": 4.5, "number": 686 }
     },
     {
       "id": 1,
       "name": "K-Mini® Single Serve Coffee Maker",
       "price": 80,
-      "image": "./../images/coffeeMaker1.webp",
+      "image": "https://images.keurig.com/is/image/keurig/K-Mini-Coffee-Maker_5000203382_swatch?$pdp_general$&wid=352&hei=282&fmt=png-alpha&qlt=75,1&op_sharpen=0&resMode=bicub&op_usm=1,1,6,0&iccEmbed=0&printRes=72&extend=0,0,0,0",
       "rating": { "decimal": 3.9, "number": 325 }
     },
     {
       "id": 2,
       "name": "Keurig® K-Select® Coffee Maker",
       "price": 110,
-      "image": "./../images/coffeeMaker2.webp",
+      "image": "https://images.keurig.com/is/image/keurig/K-Select-Coffee-Maker_5000359828_swatch?$pdp_general$&wid=352&hei=282&fmt=png-alpha&qlt=75,1&op_sharpen=0&resMode=bicub&op_usm=1,1,6,0&iccEmbed=0&printRes=72&extend=0,0,0,0",
       "rating": { "decimal": 4.1, "number": 1767 }
     },
     {
       "id": 3,
       "name": "K-Supreme Plus® SMART Single Serve Coffee Maker",
       "price": 200,
-      "image": "./../images/coffeeMaker3.webp",
+      "image": "https://images.keurig.com/is/image/keurig/K-Elite-Single-Serve-Coffee-Maker_5000359832_swatch?$pdp_general$&wid=352&hei=282&fmt=png-alpha&qlt=75,1&op_sharpen=0&resMode=bicub&op_usm=1,1,6,0&iccEmbed=0&printRes=72&extend=0,0,0,0",
       "rating": { "decimal": 4.3, "number": 2705 }
     },
     {
       "id": 4,
       "name": "K-Café® Single Serve Coffee Latte & Cappuccino Maker",
       "price": 180,
-      "image": "./../images/coffeeMaker4.webp",
+      "image": "https://images.keurig.com/is/image/keurig/K-Cafe-Coffee-Latte-Cappuccino-Maker_5000201735_swatch?$pdp_general$&wid=352&hei=282&fmt=png-alpha&qlt=75,1&op_sharpen=0&resMode=bicub&op_usm=1,1,6,0&iccEmbed=0&printRes=72&extend=0,0,0,0",
       "rating": { "decimal": 4.3, "number": 769 }
     },
     {
       "id": 5,
       "name": "K-Duo™ Single Serve & Carafe Coffee Maker",
       "price": 170,
-      "image": "./../images/coffeeMaker5.webp",
+      "image": "https://images.keurig.com/is/image/keurig/K-Slim-Single-Serve-Coffee-Maker_5000363760_swatch?$pdp_general$&wid=352&hei=282&fmt=png-alpha&qlt=75,1&op_sharpen=0&resMode=bicub&op_usm=1,1,6,0&iccEmbed=0&printRes=72&extend=0,0,0,0",
       "rating": { "decimal": 3.8, "number": 992 }
     },
     {
@@ -52,21 +52,21 @@
       "id": 7,
       "name": "K-Duo Plus™ Single Serve & Carafe Coffee Maker",
       "price": 200,
-      "image": "./../images/coffeeMaker7.webp",
+      "image": "https://images.keurig.com/is/image/keurig/K-Mini-Plus-Coffee-Maker_5000202016_swatch?$pdp_general$&wid=352&hei=282&fmt=png-alpha&qlt=75,1&op_sharpen=0&resMode=bicub&op_usm=1,1,6,0&iccEmbed=0&printRes=72&extend=0,0,0,0",
       "rating": { "decimal": 4.0, "number": 1003 }
     },
     {
       "id": 8,
       "name": "K-Café® Special Edition Single Serve Coffee Latte & Cappuccino Maker",
       "price": 200,
-      "image": "./../images/coffeeMaker8.webp",
+      "image": "https://images.keurig.com/is/image/keurig/K-Duo-Single-Serve-Carafe-Coffee-Maker_5000204977_swatch?$pdp_general$&wid=352&hei=282&fmt=png-alpha&qlt=75,1&op_sharpen=0&resMode=bicub&op_usm=1,1,6,0&iccEmbed=0&printRes=72&extend=0,0,0,0",
       "rating": { "decimal": 4.3, "number": 1302 }
     },
     {
       "id": 9,
       "name": "Keurig® K155 OfficePRO® Premier Brewing System",
       "price": 275,
-      "image": "./../images/coffeeMaker9.webp",
+      "image": "https://images.keurig.com/is/image/keurig/K-Supreme-Single-Serve-Coffee-Maker_5000362102_swatch?$pdp_general$&wid=352&hei=282&fmt=png-alpha&qlt=75,1&op_sharpen=0&resMode=bicub&op_usm=1,1,6,0&iccEmbed=0&printRes=72&extend=0,0,0,0",
       "rating": { "decimal": 3.7, "number": 550 }
     }
   ]

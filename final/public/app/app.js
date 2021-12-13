@@ -209,11 +209,10 @@ async function loadCoffeeMakers() {
   $.getJSON("data/coffeeMakers.json", function (data) {
     $.each(data, function (index, coffeeMaker) {
       coffeeMakers.push(coffeeMaker);
-      $(
-        "#homeCoffeeMakers"
-      ).append(`<div class="coffeeMaker" id="coffeeMaker${coffeeMaker.id}">
+      $("#homeCoffeeMakers").append(`
+      <div class="coffeeMaker" id="coffeeMaker${coffeeMaker.id}">
         <div class="imgHolder">
-          <img src="../../images/coffeeMaker${coffeeMaker.id}.webp" />
+          <img src="${coffeeMaker.image}" />
         </div>
         <div class="colorPicker">
           <div class="largeCircle">
