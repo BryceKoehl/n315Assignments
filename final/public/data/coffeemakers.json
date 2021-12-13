@@ -45,7 +45,7 @@
       "id": 6,
       "name": "Keurig® K-Classic® Coffee Maker",
       "price": 120,
-      "image": "./../images/coffeeMaker6.webp",
+      "image": "https://images.keurig.com/is/image/keurig/K50-Coffee-Maker_5000204441_swatch?$pdp_general$&wid=352&hei=282&fmt=png-alpha&qlt=75,1&op_sharpen=0&resMode=bicub&op_usm=1,1,6,0&iccEmbed=0&printRes=72&extend=0,0,0,0",
       "rating": { "decimal": 4.1, "number": 1982 }
     },
     {

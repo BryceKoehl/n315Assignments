@@ -281,7 +281,7 @@ footer {
 .pageWrapper .hero {
   margin: 0 auto;
   max-width: 1200px;
-  background-image: url(./../../images/hero.webp);
+  background-image: url(./../images/hero.webp);
   background-position: center;
   background-size: cover;
   height: 210px;

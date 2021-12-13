@@ -136,7 +136,7 @@ function appendToCart() {
     $("#cartItems").append(`
       <div class="coffeeMaker" id="cartItem${coffeeArray[i].id}">
       <div class="imgHolder">
-        <img src="../../images/coffeeMaker${coffeeArray[i].id}.webp" />
+        <img src="${coffeeArray[i].image}" />
       </div>
       <div class="colorPicker">
         <div class="largeCircle">
@@ -159,7 +159,7 @@ function appendToCart() {
           <p>${coffeeArray[i].rating.decimal} | (${coffeeArray[i].rating.number})</p>
         </div>
         <div class="freeShipping">
-          <img src="../../images/shipping.svg"/>
+          <img src="images/shipping.svg"/>
           <p>Free shipping</p>
         </div>
         <div class="removeFromCart" onclick="removeFromCart(${i})">
@@ -207,6 +207,7 @@ function purchase() {
 let coffeeMakers = [];
 async function loadCoffeeMakers() {
   $.getJSON("data/coffeeMakers.json", function (data) {
+    console.log("Coffee", data);
     $.each(data, function (index, coffeeMaker) {
       coffeeMakers.push(coffeeMaker);
       $("#homeCoffeeMakers").append(`
@@ -235,7 +236,7 @@ async function loadCoffeeMakers() {
             <p>${coffeeMaker.rating.decimal} | (${coffeeMaker.rating.number})</p>
           </div>
           <div class="freeShipping">
-            <img src="../../images/shipping.svg"/>
+            <img src="images/shipping.svg"/>
             <p>Free shipping</p>
           </div>
           <div class="buyNow" onclick="addtoCart(${coffeeMaker.id})">
