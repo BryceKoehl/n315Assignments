@@ -1,0 +1,581 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#app {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: MarkOT;
+  src: url(./fonts/MarkOT.ttf);
+}
+@font-face {
+  font-family: MarkOTLight;
+  src: url(./fonts/MarkOTLight.otf);
+}
+.navWrapper nav {
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.navWrapper nav #home img {
+  height: 40px;
+}
+.navWrapper nav .links {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navWrapper nav .links #numberOfItems {
+  font-family: MarkOT;
+  position: absolute;
+  font-size: 15px;
+  right: 50px;
+  top: 45px;
+  z-index: 98;
+  display: inline;
+  pointer-events: none;
+}
+.navWrapper nav .links #logoutButton {
+  color: #000;
+  font-size: 30px;
+}
+.navWrapper nav .links button {
+  border: none;
+  background-color: white;
+  font-family: MarkOT;
+  padding-bottom: 10px;
+}
+.navWrapper nav .search {
+  width: 600px;
+  height: 40px;
+  background-color: lightgrey;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 20px;
+}
+.navWrapper nav .search img {
+  height: 25px;
+  padding-right: 20px;
+}
+.navWrapper nav .search input {
+  width: 500px;
+  border: none;
+  background-color: lightgrey;
+  font-family: MarkOT;
+}
+.navWrapper .mobile-nav {
+  display: none;
+}
+.navWrapper .pageLinks {
+  font-family: MarkOT;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+.navWrapper .pageLinks a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1100px) {
+  .navWrapper .mobile-nav {
+    display: block;
+    z-index: 100;
+  }
+  .navWrapper .mobile-nav:hover {
+    cursor: pointer;
+  }
+  .navWrapper nav {
+    margin-bottom: 100px;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navWrapper nav #home {
+    margin-left: 40px;
+  }
+  .navWrapper nav .links {
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    width: 100px;
+  }
+  .navWrapper nav .links #freeShipping {
+    display: none;
+  }
+  .navWrapper nav .links #numberOfItems {
+    top: 6px;
+  }
+  .navWrapper nav .search {
+    position: absolute;
+    border-radius: 0px;
+    width: 100vw;
+    margin: 0 auto;
+    left: 0;
+    padding-left: 40px;
+    right: auto;
+    top: 50px;
+  }
+  .navWrapper .pageLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    text-align: left;
+    background-color: grey;
+    width: 200px;
+    height: 600px;
+    top: 55px;
+    border-radius: 20px;
+    left: -200px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .navWrapper .pageLinks a {
+    padding-bottom: 40px;
+  }
+}
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  height: 50px;
+  max-width: 1200px;
+  position: relative;
+  bottom: 0;
+  left: auto;
+  border-top: 2px solid lightgrey;
+  font-family: MarkOT;
+  font-size: 10px;
+  color: lightgrey;
+}
+
+.pageWrapper {
+  padding-top: 20px;
+}
+.pageWrapper #cartHeader {
+  font-family: MarkOT;
+  font-size: 30px;
+  text-align: center;
+}
+.pageWrapper .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  bottom: 0;
+  padding-bottom: 100px;
+  left: auto;
+  margin: 0 auto;
+  margin-top: -200px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 1200px;
+}
+.pageWrapper .buttons .clearCart {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 45px;
+  width: 230px;
+  border: 2px solid gold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: MarkOT;
+  font-size: 10px;
+  padding-top: 15px;
+}
+.pageWrapper .buttons .clearCart:hover {
+  cursor: pointer;
+  border: 2px solid lightcoral;
+}
+.pageWrapper .buttons .purchase {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 45px;
+  width: 230px;
+  border: 2px solid gold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: MarkOT;
+  font-size: 10px;
+  padding-top: 15px;
+}
+.pageWrapper .buttons .purchase:hover {
+  cursor: pointer;
+  border: 2px solid lightcoral;
+}
+.pageWrapper .hero {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-image: url(./../../images/hero.webp);
+  background-position: center;
+  background-size: cover;
+  height: 210px;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pageWrapper .hero p {
+  font-family: MarkOT;
+  margin-bottom: -5px;
+}
+.pageWrapper .hero h1 {
+  font-family: MarkOTLight;
+  font-size: 60px;
+}
+.pageWrapper .coffeeMakers {
+  max-width: 1200px;
+  padding-top: 100px;
+  margin-bottom: 200px;
+  min-height: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.pageWrapper .coffeeMakers .coffeeMaker {
+  margin-bottom: 25px;
+  margin-right: 20px;
+  width: 280px;
+  height: 600px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.pageWrapper .coffeeMakers .coffeeMaker .imgHolder {
+  padding-top: 30px;
+  height: 300px;
+  text-align: center;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .imgHolder img {
+  height: 210px;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .colorPicker {
+  height: 35px;
+  position: relative;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .colorPicker .largeCircle {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  background-color: black;
+  border-radius: 50%;
+  left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .colorPicker .largeCircle .whiteCircle {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .colorPicker .largeCircle .whiteCircle .smallCircle {
+  height: 22px;
+  width: 22px;
+  background-color: black;
+  border-radius: 50%;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .coffeeInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .coffeeInfo h1 {
+  font-family: MarkOT;
+  font-size: 16px;
+  color: grey;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .coffeeInfo p {
+  font-family: MarkOTLight;
+  font-size: 20px;
+  color: grey;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .coffeeInfo .ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .coffeeInfo .ratings .stars {
+  padding-right: 10px;
+  color: gold;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .coffeeInfo .ratings p {
+  font-size: 15px;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .coffeeInfo .freeShipping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .coffeeInfo .freeShipping img {
+  margin-top: -17px;
+  padding-right: 10px;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .coffeeInfo .freeShipping p {
+  font-size: 15px;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .coffeeInfo .buyNow {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 45px;
+  width: 230px;
+  border: 2px solid #f0be4b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: MarkOT;
+  font-size: 10px;
+  padding-top: 15px;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .coffeeInfo .buyNow:hover {
+  cursor: pointer;
+  border: 2px solid lightcoral;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .coffeeInfo .removeFromCart {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 45px;
+  width: 230px;
+  border: 2px solid #f0be4b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: MarkOT;
+  font-size: 10px;
+  padding-top: 15px;
+}
+.pageWrapper .coffeeMakers .coffeeMaker .coffeeInfo .removeFromCart:hover {
+  cursor: pointer;
+  border: 2px solid lightcoral;
+}
+
+@media screen and (max-width: 1100px) {
+  .pageWrapper .coffeeMakers {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pageWrapper .buttons {
+    margin-top: 100px;
+  }
+}
+.loginContent {
+  padding-top: 150px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: MarkOT;
+}
+.loginContent h1 {
+  margin-bottom: 50px;
+}
+.loginContent input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.loginContent .loginHolder {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.loginContent .loginHolder .submitLogin {
+  padding-top: 15px;
+  font-size: 20px;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.loginContent .loginHolder .submitLogin:hover {
+  cursor: pointer;
+  border: 2px solid goldenrod;
+  color: lightgray;
+}
+.loginContent .signupHolder {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.loginContent .signupHolder .submitSignup {
+  padding-top: 15px;
+  font-size: 20px;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.loginContent .signupHolder .submitSignup:hover {
+  cursor: pointer;
+  border: 2px solid goldenrod;
+  color: lightgrey;
+}
+
+@media screen and (max-width: 1100px) {
+  .loginContent {
+    margin-top: -200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}

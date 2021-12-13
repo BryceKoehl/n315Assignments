@@ -125,3 +125,11 @@
     font: Caveat;
     }
   }
+
+
+  @media screen and (max-width: $mobile) {
+    .recipeForm .form {
+      width: 82%;
+    }
+    
+  }
